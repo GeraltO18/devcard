@@ -11,10 +11,10 @@ const config = {
     },
   },
   meta: {
-    title: 'Mark Freeman - Senior React Developer',
+    title: 'Ranjith Kumar T - Software Engineer',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales ac dui at vestibulum. In condimentum metus id dui tincidunt, in blandit mi vehicula.',
-    faviconPath: '/src/assets/my-image.jpeg',
+      'Hi there!, It\'s Ranjith here. I am software engineer at IBM, working in webmethods Integeration product suite. I graduated from PSG College of Technology',
+    faviconPath: '/src/assets/file.jpg',
   },
   pdf: {
     footer:

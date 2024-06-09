@@ -20,6 +20,6 @@ const loading = import.meta.env.PUBLIC_APP_ENV === 'snapshot' ? 'eager' : 'lazy'
   isRemoteImage ? (
     <img src={src} {...props} />
   ) : (
-    <Image format="webp" fit="cover" src={src} loading={loading} {...props} />
+    <Image format="webp" fit="" src={src} loading={loading} {...props} />
   )
 }

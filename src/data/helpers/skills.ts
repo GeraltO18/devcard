@@ -123,6 +123,20 @@ export const react = createSkillFactory({
   url: 'https://reactjs.org/',
 });
 
+export const java = createSkillFactory({
+  name: 'Java',
+  icon: 'simple-icons:oracle',
+  iconColor: '#61DAFB',
+  url: 'https://www.java.com/',
+});
+
+export const spring = createSkillFactory({
+  name: 'Spring',
+  icon: 'simple-icons:spring',
+  iconColor: '#6DB33F',
+  url: 'https://spring.io/',
+});
+
 export const reactQuery = createSkillFactory({
   name: 'React Query',
   icon: 'simple-icons:reactquery',
@@ -164,3 +178,17 @@ export const vue = createSkillFactory({
   iconColor: '#4FC08D',
   url: 'https://vuejs.org/',
 });
+
+export const go = createSkillFactory({
+  name: 'Go',
+  icon: 'simple-icons:go',
+  iconColor: '#00ADD8',
+  url: 'https://go.dev/',
+});
+
+export const rust = createSkillFactory({
+  name: 'Rust',
+  icon: 'simple-icon:rust',
+  iconColor: '#000000',
+  url: 'https://www.rust-lang.org/'
+})

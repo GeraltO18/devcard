@@ -13,6 +13,8 @@ import {
   tailwindCss,
   typescript,
   vue,
+  java,
+  spring,
 } from '../helpers/skills';
 
 const experienceSectionData = {
@@ -24,59 +26,38 @@ const experienceSectionData = {
   },
   jobs: [
     {
-      role: 'Senior front-end developer',
-      company: 'Google',
-      image: import('@/assets/logos/google-logo.jpg'),
-      dates: [new Date('2020-02'), null],
+      role: 'Software Engineer - I',
+      company: 'Software AG',
+      image: import('@/assets/logos/SAG.jpg'),
+      dates: [new Date('2023-06'), null],
       description: `
-        - In tristique vulputate augue vel egestas.
-        - Quisque ac imperdiet tortor, at lacinia ex.
-        - Duis vel ex hendrerit, commodo odio sed, aliquam enim.
-        - Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi.
-        - Nunc malesuada leo et est iaculis facilisis.
-        - Fusce eu urna ut magna malesuada fringilla.
+        - Enhanced JavaMailX service to handle and process large files by implementing InputStream-based processing, increasing file size limit from **kilobytes to gigabytes**.
+        - Built a global variable retrieval API for cloud systems, enabling secure storage and retrieval of configurations based on user access levels.
+        - Trained a **GPT model** on product documentation to provide accurate answers to product-related queries.
+        - Collaboratively developed an experimental graph database using **Postgres** for **namespace dependency management** as part of an internal company competition with three teammates, reducing dependency calculation time from 2 seconds to under 500 milliseconds.
+        - Refactored few legacy code to modular, easily mantainable code.
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), nextJs(), typescript(), nx(), firebase()],
+        tags: [java(),spring()],
       },
-      links: [facebook({ url: '#' }), linkedin({ url: '#' })],
+      links: [],
     },
     {
-      role: 'React.js developer',
-      company: 'Facebook',
-      image: import('@/assets/logos/facebook-logo.png'),
-      dates: [new Date('2019-04'), new Date('2020-02')],
+      role: 'Software Engineering Intern',
+      company: 'Software AG',
+      image: import('@/assets/logos/SAG.jpg'),
+      dates: [new Date('2022-12'), new Date('2023-05')],
       description: `
-        - Aenean eget ultricies felis. Pellentesque dictum massa ut tellus eleifend, sed posuere massa mattis.
-        - Ut posuere massa lacus, eleifend molestie tortor auctor vel.
-        - Sed sed sollicitudin eros, id ultricies mi. Aliquam sodales elit vel ante tempor, non vehicula nibh facilisis.
-        - Cras feugiat ultricies maximus. Aliquam tristique ex odio, ac semper urna accumsan a.
+        - Built a Server log parser to track, collect and alert users about server health based on collected statistics.
+        - Built a thread dump pattern analyser with fast thread which predicts potential resource leaks.
+        - Built a automatic thread snapshot collector using JMX to collect thread snapshot on measure health and resource consumption of micro services.
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), reactQuery(), chakraUi(), eslint()],
+        tags: [java(),spring()],
       },
-      links: [website({ url: '#' }), instagram({ url: '#' })],
-    },
-    {
-      role: 'Junior front-end developer',
-      company: 'GitLab',
-      image: import('@/assets/logos/gitlab-logo.png'),
-      dates: [new Date('2016-09'), new Date('2019-04')],
-      description: `
-        Nulla volutpat justo ante, rhoncus posuere massa egestas in:
-
-        - Quisque pellentesque, dolor nec sollicitudin iaculis, sem velit consequat ligula, eget tempus ligula leo et est.
-        - Maecenas ut elit sit amet nibh maximus condimentum in nec lorem. Pellentesque tincidunt odio vel leo suscipit, in interdum mi gravida.
-
-        Donec non vulputate augue 🤓
-      `,
-      tagsList: {
-        title: 'Technologies',
-        tags: [vue(), tailwindCss(), pnpm()],
-      },
-      links: [twitter({ url: '#' }), github({ url: '#' })],
+      links: [],
     },
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;

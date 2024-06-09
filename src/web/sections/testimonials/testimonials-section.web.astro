@@ -10,8 +10,8 @@ export interface Props extends TestimonialsSection {}
 const { testimonials, config } = Astro.props;
 ---
 
-<SectionCard {...config}>
+<SectionCard {...config}
   <DividedList>
-    {testimonials.flatMap((testimonial) => [<Testimonial {...testimonial} />, <Divider />])}
+    <!-- {testimonials.flatMap((testimonial) => [<Testimonial {...testimonial} />, <Divider />])} -->
   </DividedList>
 </SectionCard>
